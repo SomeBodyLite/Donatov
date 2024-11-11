@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donatov.net Blog</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/light-mode.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="d-flex pc-only">
+            <a href="#" class="btn btn-s btn-pill btn-secondary btn-left"
+              >В магазин</a
+            >
+          </div>
+          <div class="logo">
+            <a href="#" class="logo__link">
+              <img
+                class="logo__img"
+                src="./assets/images/logo.svg"
+                alt="Donatov.net Blog"
+              />
+            </a>
+          </div>
+          <div class="header-actions">
+            <div class="d-flex justify-content-end gap-8 align-items-center">
+              <label class="search-wrapper search-container">
+                <input type="text" placeholder="Найдите статью..." class="main-search">
+                <button href="#" class="btn search-button">
+                  <img src="/assets/images/search.svg" alt="">
+                </button>
+                <div class="search-suggestions">
+                  <a class="search-result" href="./search-result.html">
+                    <span class="search-result__title">Классификация жанров игр: от платформеров до рогаликов</span>
+                  </a>
+                  <a class="search-result" href="./search-result.html">
+                    <span class="search-result__title">Классификация игр</span>
+                  </a>
+                  <a class="search-result" href="./search-result.html">
+                    <span class="search-result__title">Классификация игр</span>
+                  </a>
+                  <a class="search-result" href="./search-result.html">
+                    <span class="search-result__title">Классификация игр</span>
+                  </a>
+                  <a class="search-result" href="./search-result-error.html">
+                    <span class="search-result__title"><b>Пример *ничего не найдено*</b></span>
+                  </a>
+                  <a href="#" class="view-all">
+                    <img class="view-all__icon" src="/assets/images/icons/view-all-icon.svg" alt="">
+                   <span class="view-all__text">Посмотреть все</span>
+                  </a>
+                </div>
+              </label>
+              <div class="theme-switch pc-only">
+                <img src="/assets/images/switch-placeholder.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="main-container">
+          <div class="aside aside__left">
+            <div class="aside__content">
+              <div class="aside__section">
+                <a href="#" class="sidebar-item sidebar-item__active">
+                  <img class="sidebar-item__icon" src="/assets/images/icons/popular-icon.svg" alt="Popular">
+                  <span class="sidebar-item__text">Популярное</span>
+                </a>
+                <a href="#" class="sidebar-item ">
+                  <img class="sidebar-item__icon" src="/assets/images/icons/latest-icon.svg" alt="Latest">
+                  <span class="sidebar-item__text">Свежее</span>
+                </a>
+              </div>
+              <div class="divider"></div>
+              <div class="aside__section">
+                <span class="aside__section__title">Актуальные темы</span>
+                <a href="./сategory-template.html" class="sidebar-item">
+                  <img class="sidebar-item__icon" src="/assets/images/icons/steam-icon.svg" alt="Steam">
+                  <span class="sidebar-item__text">Steam</span>
+                </a>
+                <a href="./сategory-template.html" class="sidebar-item">
+                  <img class="sidebar-item__icon" src="/assets/images/icons/xbox-icon.svg" alt="Xbox">
+                  <span class="sidebar-item__text">Xbox</span>
+                </a>
+                <a href="./сategory-template.html" class="sidebar-item">
+                  <img class="sidebar-item__icon" src="/assets/images/icons/dota2-icon.svg" alt="Dota 2">
+                  <span class="sidebar-item__text">Dota 2</span>
+                </a>
+                <a href="./сategory-template.html" class="sidebar-item">
+                  <img class="sidebar-item__icon" src="/assets/images/icons/playstation-icon.svg" alt="PlayStation">
+                  <span class="sidebar-item__text">PlayStation</span>
+                </a>
+                <a href="./сategory-template.html" class="sidebar-item">
+                  <img class="sidebar-item__icon" src="/assets/images/icons/counter-strike-icon.svg" alt="Counter Strike 2">
+                  <span class="sidebar-item__text">Counter Strike 2</span>
+                </a>
+                <a href="./сategory-template.html" class="sidebar-item">
+                  <img class="sidebar-item__icon" src="/assets/images/icons/games-icon.svg" alt="Игры для ПК">
+                  <span class="sidebar-item__text">Игры для ПК</span>
+                </a>
+                <a href="./categories-list.html" class="view-all">
+                  <img class="view-all__icon" src="/assets/images/icons/view-all-icon.svg" alt="">
+                 <span class="view-all__text">Посмотреть все</span>
+                </a>
+              </div>
+              <div class="aside__section aside__section__bottom" style="gap: 0;">
+                <div class="divider"></div>
+                <a href="#" class="sidebar-item">
+                  <img class="sidebar-item__icon" src="/assets/images/icons/about-icon.svg" alt="About">
+                  <span class="sidebar-item__text">О проекте</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="main__content">
+            <div class="feed">
+              <a href="/blog-template.html" class="post post__big">
+                <div class="post__preview">
+                  <img class="post__preview__img" src="./assets/images/post-1.png" alt="Article Title">
+                </div>
+                <div class="post__content">
+                  <object class="tags">
+                    <a href="#" class="tag">
+                      <img class="tag__img" src="/assets/images/icons/xbox-icon.svg" alt="xbox">
+                      <span class="tag__text">Label</span>
+                    </a>
+                    <a href="#" class="tag">
+                      <img class="tag__img" src="/assets/images/icons/xbox-icon.svg" alt="xbox">
+                      <span class="tag__text">Label</span>
+                    </a>
+                    <a href="#" class="tag">
+                      <img class="tag__img" src="/assets/images/icons/xbox-icon.svg" alt="">
+                      <span class="tag__text">Label</span>
+                    </a>
+                  </object>
+                  <h2 class="post__content__title">Article Title</h2>
+                  <object class="reactions">
+                    <button class="react react__active">
+                      <img class="react__img" src="./assets/images/icons/react-like.png" alt="like">
+                      <span class="react__count">1</span>
+                    </button>
+                    <button class="react">
+                      <img class="react__img" src="./assets/images/icons/react-hmm.png" alt="hmm">
+                      <span class="react__count"></span>
+                    </button>
+                    <button class="react">
+                      <img class="react__img" src="./assets/images/icons/react-smile.png" alt="smile">
+                      <span class="react__count">30</span>
+                    </button>
+                    <button class="react">
+                      <img class="react__img" src="./assets/images/icons/react-angry.png" alt="angry">
+                      <span class="react__count">999</span>
+                    </button>
+                  </object>
+                </div>
+              </a>
+              <a href="/blog-template.html" class="post">
+                <div class="post__preview">
+                  <img class="post__preview__img" src="./assets/images/post-2.png" alt="Article Title">
+                </div>
+                <div class="post__content">
+                  <object class="tags">
+                    <a href="#" class="tag">
+                      <img class="tag__img" src="/assets/images/icons/xbox-icon.svg" alt="xbox">
+                      <span class="tag__text">Label</span>
+                    </a>
+                    <a href="#" class="tag">
+                      <img class="tag__img" src="/assets/images/icons/xbox-icon.svg" alt="xbox">
+                      <span class="tag__text">Label</span>
+                    </a>
+                    <a href="#" class="tag">
+                      <img class="tag__img" src="/assets/images/icons/xbox-icon.svg" alt="">
+                      <span class="tag__text">Label</span>
+                    </a>
+                  </object>
+                  <h2 class="post__content__title">Топ-10 игровых новинок года: что ждать в магазинах?</h2>
+                  <object class="reactions">
+                    <button class="react react__active">
+                      <img class="react__img" src="./assets/images/icons/react-like.png" alt="like">
+                      <span class="react__count">1</span>
+                    </button>
+                    <button class="react">
+                      <img class="react__img" src="./assets/images/icons/react-hmm.png" alt="hmm">
+                      <span class="react__count"></span>
+                    </button>
+                    <button class="react">
+                      <img class="react__img" src="./assets/images/icons/react-smile.png" alt="smile">
+                      <span class="react__count">30</span>
+                    </button>
+                    <button class="react">
+                      <img class="react__img" src="./assets/images/icons/react-angry.png" alt="angry">
+                      <span class="react__count">999</span>
+                    </button>
+                  </object>
+                </div>
+              </a>
+              <a href="/blog-template.html" class="post">
+                <div class="post__preview">
+                  <img class="post__preview__img" src="./assets/images/post-3.png" alt="Топ-10 невероятных игровых миров: погружение в виртуальную реальность">
+                </div>
+                <div class="post__content">
+                  <object class="tags">
+                    <a href="#" class="tag">
+                      <img class="tag__img" src="/assets/images/icons/xbox-icon.svg" alt="xbox">
+                      <span class="tag__text">Label</span>
+                    </a>
+                  </object>
+                  <h2 class="post__content__title">Топ-10 невероятных игровых миров: погружение в виртуальную реальность</h2>
+                  <object class="reactions">
+                    <button class="react react__active">
+                      <img class="react__img" src="./assets/images/icons/react-like.png" alt="like">
+                      <span class="react__count">1</span>
+                    </button>
+                    <button class="react">
+                      <img class="react__img" src="./assets/images/icons/react-hmm.png" alt="hmm">
+                      <span class="react__count"></span>
+                    </button>
+                    <button class="react">
+                      <img class="react__img" src="./assets/images/icons/react-smile.png" alt="smile">
+                      <span class="react__count">30</span>
+                    </button>
+                    <button class="react">
+                      <img class="react__img" src="./assets/images/icons/react-angry.png" alt="angry">
+                      <span class="react__count">999</span>
+                    </button>
+                  </object>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="aside aside__right">
+            <div class="aside__content">
+              <div class="widget">
+                <div class="widget__preview">
+                  <img class="widget__preview__img" src="./assets/images/widget-1.png" alt="Telegram">
+                  <div class="widget__preview__info">
+                    <img class="widget__preview__info__img" src="./assets/images/logo-rounded.svg" alt="">
+                  </div>
+                </div>
+                <div class="widget__content">
+                  <div class="widget__content__text">
+                    <h5 class="body-2xs-semi-bold text-secondary">НАШ TELEGRAM</h5>
+                    <h4 class="body-md-semi-bold text-primary">Donatov.net - Донат есть! 💎</h4>
+                    <h6 class="body-sm-regular text-secondary">260 425 подписчиков</h6>
+                  </div>
+                  <div class="widget__content__action">
+                    <a href="#" class="btn btn-pill btn-s btn-right btn-secondary">Подписаться</a>
+                  </div>
+                </div>
+              </div>
+              <div class="widget">
+                <div class="widget__preview">
+                  <img class="widget__preview__img" src="./assets/images/widget-2.png" alt="YouTube">
+                  <div class="widget__preview__info">
+                    <img class="widget__preview__info__img" src="./assets/images/logo-rounded.svg" alt="">
+                  </div>
+                </div>
+                <div class="widget__content">
+                  <div class="widget__content__text">
+                    <h5 class="body-2xs-semi-bold text-secondary">НАШ YOUTUBE</h5>
+                    <h4 class="body-md-semi-bold text-primary">Donatov.net</h4>
+                    <h6 class="body-sm-regular text-secondary">16 411 подписчиков</h6>
+                  </div>
+                  <div class="widget__content__action">
+                    <a href="#" class="btn btn-pill btn-s btn-right btn-secondary">Подписаться</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <a href="./index.html" class="footer__item footer__item__active">
+        <img class="footer__item__img" src="./assets/images/icons/home-icon.svg" alt="">
+        <span class="footer__item__text">Главная</span>
+      </a>
+      <a href="./categories-list.html" class="footer__item">
+        <img class="footer__item__img" src="./assets/images/icons/categories-icon.svg" alt="">
+        <span class="footer__item__text">Категории</span>
+      </a>
+      <a href="#" class="footer__item">
+        <img class="footer__item__img" src="./assets/images/icons/shop-icon.svg" alt="">
+        <span class="footer__item__text">Магазин</span>
+      </a>
+    </footer>
+    <script src="./assets/js/search.js"></script>
+  </body>
+</html>

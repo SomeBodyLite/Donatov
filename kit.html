@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/light-mode.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <style>
+      .ui-kit {
+        padding: 20px;
+        margin: 20px;
+        border: 3px dashed var(--item-primary);
+        border-radius: 20px;
+
+        display: flex; gap: 20px; flex-wrap: wrap;
+      }
+      .fonts h2{
+        margin-bottom: 16px;
+      }
+    </style>
+  </head>
+  <body class="">
+
+    <div class="container">
+      <section class="ui-kit">
+        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+          <div style="display: flex; gap: 10px;">
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-primary btn-pill btn-s ">btn pill s</button>
+              <button class="btn btn-primary btn-pill btn-m ">btn pill m</button>
+            </div>
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-primary btn-pill btn-s " disabled>btn pill s disabled</button>
+              <button class="btn btn-primary btn-pill btn-m " disabled>btn pill m disabled</button>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-primary btn-rounded btn-s ">btn rounded s</button>
+              <button class="btn btn-primary btn-rounded btn-m ">btn rounded m</button>
+            </div>
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-primary btn-rounded btn-s " disabled>btn rounded s disabled</button>
+              <button class="btn btn-primary btn-rounded btn-m " disabled>btn rounded m disabled</button>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-secondary btn-pill btn-s ">btn pill s</button>
+              <button class="btn btn-secondary btn-pill btn-m ">btn pill m</button>
+            </div>
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-secondary btn-pill btn-s " disabled>btn pill s disabled</button>
+              <button class="btn btn-secondary btn-pill btn-m " disabled>btn pill m disabled</button>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-secondary btn-rounded btn-s ">btn rounded s</button>
+              <button class="btn btn-secondary btn-rounded btn-m ">btn rounded m</button>
+            </div>
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-secondary btn-rounded btn-s " disabled>btn rounded s disabled</button>
+              <button class="btn btn-secondary btn-rounded btn-m " disabled>btn rounded m disabled</button>
+            </div>
+          </div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+          <div style="display: flex; gap: 10px;">
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-primary btn-pill btn-s btn-right">btn pill s</button>
+              <button class="btn btn-primary btn-pill btn-m btn-right">btn pill m</button>
+            </div>
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-primary btn-pill btn-s btn-right" disabled>btn pill s disabled</button>
+              <button class="btn btn-primary btn-pill btn-m btn-right" disabled>btn pill m disabled</button>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-primary btn-rounded btn-s btn-right">btn rounded s</button>
+              <button class="btn btn-primary btn-rounded btn-m btn-right">btn rounded m</button>
+            </div>
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-primary btn-rounded btn-s btn-right" disabled>btn rounded s disabled</button>
+              <button class="btn btn-primary btn-rounded btn-m btn-right" disabled>btn rounded m disabled</button>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-secondary btn-pill btn-s btn-right">btn pill s</button>
+              <button class="btn btn-secondary btn-pill btn-m btn-right">btn pill m</button>
+            </div>
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-secondary btn-pill btn-s btn-right" disabled>btn pill s disabled</button>
+              <button class="btn btn-secondary btn-pill btn-m btn-right" disabled>btn pill m disabled</button>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-secondary btn-rounded btn-s btn-right">btn rounded s</button>
+              <button class="btn btn-secondary btn-rounded btn-m btn-right">btn rounded m</button>
+            </div>
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-secondary btn-rounded btn-s btn-right" disabled>btn rounded s disabled</button>
+              <button class="btn btn-secondary btn-rounded btn-m btn-right" disabled>btn rounded m disabled</button>
+            </div>
+          </div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+          <div style="display: flex; gap: 10px;">
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-primary btn-pill btn-s btn-left">btn pill s</button>
+              <button class="btn btn-primary btn-pill btn-m btn-left">btn pill m</button>
+            </div>
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-primary btn-pill btn-s btn-left" disabled>btn pill s disabled</button>
+              <button class="btn btn-primary btn-pill btn-m btn-left" disabled>btn pill m disabled</button>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-primary btn-rounded btn-s btn-left">btn rounded s</button>
+              <button class="btn btn-primary btn-rounded btn-m btn-left">btn rounded m</button>
+            </div>
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-primary btn-rounded btn-s btn-left" disabled>btn rounded s disabled</button>
+              <button class="btn btn-primary btn-rounded btn-m btn-left" disabled>btn rounded m disabled</button>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-secondary btn-pill btn-s btn-left">btn pill s</button>
+              <button class="btn btn-secondary btn-pill btn-m btn-left">btn pill m</button>
+            </div>
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-secondary btn-pill btn-s btn-left" disabled>btn pill s disabled</button>
+              <button class="btn btn-secondary btn-pill btn-m btn-left" disabled>btn pill m disabled</button>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-secondary btn-rounded btn-s btn-left">btn rounded s</button>
+              <button class="btn btn-secondary btn-rounded btn-m btn-left">btn rounded m</button>
+            </div>
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-secondary btn-rounded btn-s btn-left" disabled>btn rounded s disabled</button>
+              <button class="btn btn-secondary btn-rounded btn-m btn-left" disabled>btn rounded m disabled</button>
+            </div>
+          </div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+          <div style="display: flex; gap: 10px;">
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-primary btn-pill btn-s btn-left btn-right">btn pill s</button>
+              <button class="btn btn-primary btn-pill btn-m btn-left btn-right">btn pill m</button>
+            </div>
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-primary btn-pill btn-s btn-left btn-right" disabled>btn pill s disabled</button>
+              <button class="btn btn-primary btn-pill btn-m btn-left btn-right" disabled>btn pill m disabled</button>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-primary btn-rounded btn-s btn-left btn-right">btn rounded s</button>
+              <button class="btn btn-primary btn-rounded btn-m btn-left btn-right">btn rounded m</button>
+            </div>
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-primary btn-rounded btn-s btn-left btn-right" disabled>btn rounded s disabled</button>
+              <button class="btn btn-primary btn-rounded btn-m btn-left btn-right" disabled>btn rounded m disabled</button>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-secondary btn-pill btn-s btn-left btn-right">btn pill s</button>
+              <button class="btn btn-secondary btn-pill btn-m btn-left btn-right">btn pill m</button>
+            </div>
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-secondary btn-pill btn-s btn-left btn-right" disabled>btn pill s disabled</button>
+              <button class="btn btn-secondary btn-pill btn-m btn-left btn-right" disabled>btn pill m disabled</button>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-secondary btn-rounded btn-s btn-left btn-right">btn rounded s</button>
+              <button class="btn btn-secondary btn-rounded btn-m btn-left btn-right">btn rounded m</button>
+            </div>
+            <div style="display:flex;flex-direction: column; align-items: center; gap: 10px;">
+              <button class="btn btn-secondary btn-rounded btn-s btn-left btn-right" disabled>btn rounded s disabled</button>
+              <button class="btn btn-secondary btn-rounded btn-m btn-left btn-right" disabled>btn rounded m disabled</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ui-kit">
+        <a href="#" class="btn btn-pill btn-s btn-image btn-primary">
+          Перейти в магазин
+          <img class="btn-image__icon" src="/assets/images/icons/cart.svg" alt="">
+        </a>
+        <button class="btn btn-pill btn-s btn-image btn-primary">
+          Поделиться статьей
+          <img class="btn-image__icon" src="/assets/images/icons/share.svg" alt="">
+        </button>
+      </section>
+      <section class="ui-kit">
+        <div class="d-flex flex-column">
+          <a href="#" class="sidebar-item">
+            <img class="sidebar-item__icon" src="/assets/images/icons/popular-icon.svg" alt="Popular">
+            <span class="sidebar-item__text">Label</span>
+          </a>
+          <a href="#" class="sidebar-item sidebar-item__active">
+            <img class="sidebar-item__icon" src="/assets/images/icons/popular-icon.svg" alt="Popular">
+            <span class="sidebar-item__text">Label</span>
+          </a>
+        </div>
+      </section>
+      <section class="ui-kit">
+        <div class="widget">
+          <div class="widget__preview">
+            <img class="widget__preview__img" src="./assets/images/widget-1.png" alt="Telegram">
+            <div class="widget__preview__info">
+              <img class="widget__preview__info__img" src="./assets/images/logo-rounded.svg" alt="">
+            </div>
+          </div>
+          <div class="widget__content">
+            <div class="widget__content__text">
+              <h5 class="body-2xs-semi-bold text-secondary">body-2xs-semi-bold text-secondary</h5>
+              <h4 class="body-md-semi-bold text-primary">body-md-semi-bold text-primary</h4>
+              <h6 class="body-sm-regular text-secondary">body-sm-regular text-secondary</h6>
+            </div>
+            <div class="widget__content__action">
+              <a href="#" class="btn btn-pill btn-s btn-right btn-secondary">btn btn-pill btn-s btn-right btn-secondary</a>
+            </div>
+          </div>
+        </div>
+        <div class="widget">
+          <div class="widget__preview">
+            <img class="widget__preview__img" src="./assets/images/widget-2.png" alt="YouTube">
+            <div class="widget__preview__info">
+              <img class="widget__preview__info__img" src="./assets/images/logo-rounded.svg" alt="">
+            </div>
+          </div>
+          <div class="widget__content">
+            <div class="widget__content__text">
+              <h5 class="body-2xs-semi-bold text-secondary">body-2xs-semi-bold text-secondary</h5>
+              <h4 class="body-md-semi-bold text-primary">body-md-semi-bold text-primary</h4>
+              <h6 class="body-sm-regular text-secondary">body-sm-regular text-secondary</h6>
+            </div>
+            <div class="widget__content__action">
+              <a href="#" class="btn btn-pill btn-s btn-right btn-secondary">btn btn-pill btn-s btn-right btn-secondary</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ui-kit">
+        <div class="feed">
+          <a href="/blog-template.html" class="post post__big">
+            <div class="post__preview">
+              <img class="post__preview__img" src="./assets/images/post-1.png" alt="Article Title">
+            </div>
+            <div class="post__content">
+              <object class="tags">
+                <a href="#" class="tag">
+                  <img class="tag__img" src="/assets/images/icons/xbox-icon.svg" alt="xbox">
+                  <span class="tag__text">Label</span>
+                </a>
+                <a href="#" class="tag">
+                  <img class="tag__img" src="/assets/images/icons/xbox-icon.svg" alt="xbox">
+                  <span class="tag__text">Label</span>
+                </a>
+                <a href="#" class="tag">
+                  <img class="tag__img" src="/assets/images/icons/xbox-icon.svg" alt="">
+                  <span class="tag__text">Label</span>
+                </a>
+              </object>
+              <h2 class="post__content__title">Article Title</h2>
+              <object class="reactions">
+                <button class="react react__active">
+                  <img class="react__img" src="./assets/images/icons/react-like.png" alt="like">
+                  <span class="react__count">1</span>
+                </button>
+                <button class="react">
+                  <img class="react__img" src="./assets/images/icons/react-hmm.png" alt="hmm">
+                  <span class="react__count"></span>
+                </button>
+                <button class="react">
+                  <img class="react__img" src="./assets/images/icons/react-smile.png" alt="smile">
+                  <span class="react__count">30</span>
+                </button>
+                <button class="react">
+                  <img class="react__img" src="./assets/images/icons/react-angry.png" alt="angry">
+                  <span class="react__count">999</span>
+                </button>
+              </object>
+            </div>
+          </a>
+          <a href="/blog-template.html" class="post">
+            <div class="post__preview">
+              <img class="post__preview__img" src="./assets/images/post-2.png" alt="Article Title">
+            </div>
+            <div class="post__content">
+              <object class="tags">
+                <a href="#" class="tag">
+                  <img class="tag__img" src="/assets/images/icons/xbox-icon.svg" alt="xbox">
+                  <span class="tag__text">Label</span>
+                </a>
+                <a href="#" class="tag">
+                  <img class="tag__img" src="/assets/images/icons/xbox-icon.svg" alt="xbox">
+                  <span class="tag__text">Label</span>
+                </a>
+                <a href="#" class="tag">
+                  <img class="tag__img" src="/assets/images/icons/xbox-icon.svg" alt="">
+                  <span class="tag__text">Label</span>
+                </a>
+              </object>
+              <h2 class="post__content__title">Топ-10 игровых новинок года: что ждать в магазинах?</h2>
+              <object class="reactions">
+                <button class="react react__active">
+                  <img class="react__img" src="./assets/images/icons/react-like.png" alt="like">
+                  <span class="react__count">1</span>
+                </button>
+                <button class="react">
+                  <img class="react__img" src="./assets/images/icons/react-hmm.png" alt="hmm">
+                  <span class="react__count"></span>
+                </button>
+                <button class="react">
+                  <img class="react__img" src="./assets/images/icons/react-smile.png" alt="smile">
+                  <span class="react__count">30</span>
+                </button>
+                <button class="react">
+                  <img class="react__img" src="./assets/images/icons/react-angry.png" alt="angry">
+                  <span class="react__count">999</span>
+                </button>
+              </object>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section class="ui-kit">
+        <object class="reactions">
+          <button class="react react__active">
+            <img class="react__img" src="./assets/images/icons/react-like.png" alt="like">
+            <span class="react__count">1</span>
+          </button>
+          <button class="react">
+            <img class="react__img" src="./assets/images/icons/react-hmm.png" alt="hmm">
+            <span class="react__count"></span>
+          </button>
+          <button class="react">
+            <img class="react__img" src="./assets/images/icons/react-smile.png" alt="smile">
+            <span class="react__count">30</span>
+          </button>
+          <button class="react">
+            <img class="react__img" src="./assets/images/icons/react-angry.png" alt="angry">
+            <span class="react__count">999</span>
+          </button>
+        </object>
+        <object class="reactions reactions__big">
+          <button class="react react__active">
+            <img class="react__img" src="./assets/images/icons/react-like.png" alt="like">
+            <span class="react__count">1</span>
+          </button>
+          <button class="react">
+            <img class="react__img" src="./assets/images/icons/react-hmm.png" alt="hmm">
+            <span class="react__count"></span>
+          </button>
+          <button class="react">
+            <img class="react__img" src="./assets/images/icons/react-smile.png" alt="smile">
+            <span class="react__count">30</span>
+          </button>
+          <button class="react">
+            <img class="react__img" src="./assets/images/icons/react-angry.png" alt="angry">
+            <span class="react__count">999</span>
+          </button>
+        </object>
+      </section>
+      <section class="ui-kit">
+        <object class="tags">
+          <a href="#" class="tag">
+            <img class="tag__img" src="/assets/images/icons/xbox-icon.svg" alt="xbox">
+            <span class="tag__text">Label</span>
+          </a>
+          <a href="#" class="tag">
+            <img class="tag__img" src="/assets/images/icons/xbox-icon.svg" alt="xbox">
+            <span class="tag__text">Label</span>
+          </a>
+          <a href="#" class="tag">
+            <img class="tag__img" src="/assets/images/icons/xbox-icon.svg" alt="">
+            <span class="tag__text">Label</span>
+          </a>
+        </object>
+      </section>
+      <section class="ui-kit">
+        <div class="categories-list">
+          <div class="categories-list__title">
+            <h1 class="headline-xs-semi-bold">Все категории</h1>
+          </div>
+          <div class="categories-list__content">
+            <a class="categories-list__item" href="./сategory-template.html">
+              <img class="categories-list__item__icon" src="./assets/images/icons/steam-icon.svg" alt="">
+              <div class="d-flex flex-column">
+                <h4 class="body-sm-semi-bold text-primary">Steam</h4>
+                <p class="body-sm-regular text-secondary">19 статей</p>
+              </div>
+            </a>
+            <a class="categories-list__item" href="./сategory-template.html">
+              <img class="categories-list__item__icon" src="./assets/images/icons/steam-icon.svg" alt="">
+              <div class="d-flex flex-column">
+                <h4 class="body-sm-semi-bold text-primary">Steam</h4>
+                <p class="body-sm-regular text-secondary">19 статей</p>
+              </div>
+            </a>
+            <a class="categories-list__item" href="./сategory-template.html">
+              <img class="categories-list__item__icon" src="./assets/images/icons/steam-icon.svg" alt="">
+              <div class="d-flex flex-column">
+                <h4 class="body-sm-semi-bold text-primary">Steam</h4>
+                <p class="body-sm-regular text-secondary">19 статей</p>
+              </div>
+            </a>
+            <a class="categories-list__item" href="./сategory-template.html">
+              <img class="categories-list__item__icon" src="./assets/images/icons/steam-icon.svg" alt="">
+              <div class="d-flex flex-column">
+                <h4 class="body-sm-semi-bold text-primary">Steam</h4>
+                <p class="body-sm-regular text-secondary">19 статей</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="ui-kit">
+        <div class="block p-24 mb-16 d-flex flex-column gap-16 align-items-start">block p-24 mb-16 d-flex flex-column gap-16 align-items-start</div>
+      </section>
+      <section class="ui-kit">
+        <header class="header">
+          <div class="container">
+            <div class="header-content">
+              <div class="d-flex pc-only">
+                <a href="#" class="btn btn-s btn-pill btn-secondary btn-left"
+                  >В магазин</a
+                >
+              </div>
+              <div class="logo">
+                <a href="#" class="logo__link">
+                  <img
+                    class="logo__img"
+                    src="./assets/images/logo.svg"
+                    alt="Donatov.net Blog"
+                  />
+                </a>
+              </div>
+              <div class="header-actions">
+                <div class="d-flex justify-content-end gap-8 align-items-center">
+                  <label class="search-wrapper search-container">
+                    <input type="text" placeholder="Найдите статью..." class="main-search">
+                    <button href="#" class="btn search-button">
+                      <img src="/assets/images/search.svg" alt="">
+                    </button>
+                    <div class="search-suggestions">
+                      <a class="search-result" href="./search-result.html">
+                        <span class="search-result__title">Классификация жанров игр: от платформеров до рогаликов</span>
+                      </a>
+                      <a class="search-result" href="./search-result.html">
+                        <span class="search-result__title">Классификация игр</span>
+                      </a>
+                      <a class="search-result" href="./search-result.html">
+                        <span class="search-result__title">Классификация игр</span>
+                      </a>
+                      <a class="search-result" href="./search-result.html">
+                        <span class="search-result__title">Классификация игр</span>
+                      </a>
+                      <a class="search-result" href="./search-result-error.html">
+                        <span class="search-result__title"><b>Пример *ничего не найдено*</b></span>
+                      </a>
+                      <a href="#" class="view-all">
+                        <img class="view-all__icon" src="/assets/images/icons/view-all-icon.svg" alt="">
+                       <span class="view-all__text">Посмотреть все</span>
+                      </a>
+                    </div>
+                  </label>
+                  <div class="theme-switch pc-only">
+                    <img src="/assets/images/switch-placeholder.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </section>
+      <section class="ui-kit">
+        Футер отображается только на мобильных устройствах
+        <footer class="footer">
+          <a href="./index.html" class="footer__item footer__item__active">
+            <img class="footer__item__img" src="./assets/images/icons/home-icon.svg" alt="">
+            <span class="footer__item__text">Главная</span>
+          </a>
+          <a href="./categories-list.html" class="footer__item">
+            <img class="footer__item__img" src="./assets/images/icons/categories-icon.svg" alt="">
+            <span class="footer__item__text">Категории</span>
+          </a>
+          <a href="#" class="footer__item">
+            <img class="footer__item__img" src="./assets/images/icons/shop-icon.svg" alt="">
+            <span class="footer__item__text">Магазин</span>
+          </a>
+        </footer>
+      </section>
+      <section class="ui-kit fonts">
+        <section>
+          <h2>Body Text Styles</h2>
+          <!-- 2XS -->
+          <p class="body-2xs-light">Body 2XS Light</p>
+          <p class="body-2xs-regular">Body 2XS Regular</p>
+          <p class="body-2xs-medium">Body 2XS Medium</p>
+          <p class="body-2xs-semi-bold">Body 2XS Semi-Bold</p>
+          <p class="body-2xs-bold">Body 2XS Bold</p>
+          <p class="body-2xs-extra-bold">Body 2XS Extra-Bold</p>
+          <p class="body-2xs-black">Body 2XS Black</p>
+      
+          <!-- XS -->
+          <p class="body-xs-light">Body XS Light</p>
+          <p class="body-xs-regular">Body XS Regular</p>
+          <p class="body-xs-medium">Body XS Medium</p>
+          <p class="body-xs-semi-bold">Body XS Semi-Bold</p>
+          <p class="body-xs-bold">Body XS Bold</p>
+          <p class="body-xs-extra-bold">Body XS Extra-Bold</p>
+          <p class="body-xs-black">Body XS Black</p>
+      
+          <!-- SM -->
+          <p class="body-sm-light">Body SM Light</p>
+          <p class="body-sm-regular">Body SM Regular</p>
+          <p class="body-sm-medium">Body SM Medium</p>
+          <p class="body-sm-semi-bold">Body SM Semi-Bold</p>
+          <p class="body-sm-bold">Body SM Bold</p>
+          <p class="body-sm-extra-bold">Body SM Extra-Bold</p>
+          <p class="body-sm-black">Body SM Black</p>
+      
+          <!-- MD -->
+          <p class="body-md-light">Body MD Light</p>
+          <p class="body-md-regular">Body MD Regular</p>
+          <p class="body-md-medium">Body MD Medium</p>
+          <p class="body-md-semi-bold">Body MD Semi-Bold</p>
+          <p class="body-md-bold">Body MD Bold</p>
+          <p class="body-md-extra-bold">Body MD Extra-Bold</p>
+          <p class="body-md-black">Body MD Black</p>
+      
+          <!-- LG -->
+          <p class="body-lg-light">Body LG Light</p>
+          <p class="body-lg-regular">Body LG Regular</p>
+          <p class="body-lg-medium">Body LG Medium</p>
+          <p class="body-lg-semi-bold">Body LG Semi-Bold</p>
+          <p class="body-lg-bold">Body LG Bold</p>
+          <p class="body-lg-extra-bold">Body LG Extra-Bold</p>
+          <p class="body-lg-black">Body LG Black</p>
+        </section>
+      
+        <!-- HEADLINE STYLES -->
+        <section>
+          <h2>Headline Text Styles</h2>
+          <!-- 2XS -->
+          <p class="headline-2xs-light">Headline 2XS Light</p>
+          <p class="headline-2xs-regular">Headline 2XS Regular</p>
+          <p class="headline-2xs-medium">Headline 2XS Medium</p>
+          <p class="headline-2xs-semi-bold">Headline 2XS Semi-Bold</p>
+          <p class="headline-2xs-bold">Headline 2XS Bold</p>
+          <p class="headline-2xs-extra-bold">Headline 2XS Extra-Bold</p>
+          <p class="headline-2xs-black">Headline 2XS Black</p>
+      
+          <!-- XS -->
+          <p class="headline-xs-light">Headline XS Light</p>
+          <p class="headline-xs-regular">Headline XS Regular</p>
+          <p class="headline-xs-medium">Headline XS Medium</p>
+          <p class="headline-xs-semi-bold">Headline XS Semi-Bold</p>
+          <p class="headline-xs-bold">Headline XS Bold</p>
+          <p class="headline-xs-extra-bold">Headline XS Extra-Bold</p>
+          <p class="headline-xs-black">Headline XS Black</p>
+      
+          <!-- SM -->
+          <p class="headline-sm-light">Headline SM Light</p>
+          <p class="headline-sm-regular">Headline SM Regular</p>
+          <p class="headline-sm-medium">Headline SM Medium</p>
+          <p class="headline-sm-semi-bold">Headline SM Semi-Bold</p>
+          <p class="headline-sm-bold">Headline SM Bold</p>
+          <p class="headline-sm-extra-bold">Headline SM Extra-Bold</p>
+          <p class="headline-sm-black">Headline SM Black</p>
+      
+          <!-- MD -->
+          <p class="headline-md-light">Headline MD Light</p>
+          <p class="headline-md-regular">Headline MD Regular</p>
+          <p class="headline-md-medium">Headline MD Medium</p>
+          <p class="headline-md-semi-bold">Headline MD Semi-Bold</p>
+          <p class="headline-md-bold">Headline MD Bold</p>
+          <p class="headline-md-extra-bold">Headline MD Extra-Bold</p>
+          <p class="headline-md-black">Headline MD Black</p>
+      
+          <!-- LG -->
+          <p class="headline-lg-light">Headline LG Light</p>
+          <p class="headline-lg-regular">Headline LG Regular</p>
+          <p class="headline-lg-medium">Headline LG Medium</p>
+          <p class="headline-lg-semi-bold">Headline LG Semi-Bold</p>
+          <p class="headline-lg-bold">Headline LG Bold</p>
+          <p class="headline-lg-extra-bold">Headline LG Extra-Bold</p>
+          <p class="headline-lg-black">Headline LG Black</p>
+      
+          <!-- XL -->
+          <p class="headline-xl-light">Headline XL Light</p>
+          <p class="headline-xl-regular">Headline XL Regular</p>
+          <p class="headline-xl-medium">Headline XL Medium</p>
+          <p class="headline-xl-semi-bold">Headline XL Semi-Bold</p>
+          <p class="headline-xl-bold">Headline XL Bold</p>
+          <p class="headline-xl-extra-bold">Headline XL Extra-Bold</p>
+          <p class="headline-xl-black">Headline XL Black</p>
+      
+          <!-- 2XL -->
+          <p class="headline-2xl-light">Headline 2XL Light</p>
+          <p class="headline-2xl-regular">Headline 2XL Regular</p>
+          <p class="headline-2xl-medium">Headline 2XL Medium</p>
+          <p class="headline-2xl-semi-bold">Headline 2XL Semi-Bold</p>
+          <p class="headline-2xl-bold">Headline 2XL Bold</p>
+          <p class="headline-2xl-extra-bold">Headline 2XL Extra-Bold</p>
+          <p class="headline-2xl-black">Headline 2XL Black</p>
+      
+          <!-- Display -->
+          <p class="headline-display-light">Headline Display Light</p>
+          <p class="headline-display-regular">Headline Display Regular</p>
+          <p class="headline-display-medium">Headline Display Medium</p>
+          <p class="headline-display-semi-bold">Headline Display Semi-Bold</p>
+          <p class="headline-display-bold">Headline Display Bold</p>
+          <p class="headline-display-extra-bold">Headline Display Extra-Bold</p>
+          <p class="headline-display-black">Headline Display Black</p>
+        </section>
+      
+      </section>
+      
+    </div>
+  </body>
+</html>

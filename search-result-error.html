@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donatov.net Blog</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/light-mode.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="d-flex pc-only">
+            <a href="#" class="btn btn-s btn-pill btn-secondary btn-left"
+              >В магазин</a
+            >
+          </div>
+          <div class="logo">
+            <a href="#" class="logo__link">
+              <img
+                class="logo__img"
+                src="./assets/images/logo.svg"
+                alt="Donatov.net Blog"
+              />
+            </a>
+          </div>
+          <div class="header-actions">
+            <div class="d-flex justify-content-end gap-8 align-items-center">
+              <label class="search-wrapper search-container">
+                <input type="text" placeholder="Найдите статью..." class="main-search">
+                <button href="#" class="btn search-button">
+                  <img src="/assets/images/search.svg" alt="">
+                </button>
+                <div class="search-suggestions">
+                  <a class="search-result" href="./search-result.html">
+                    <span class="search-result__title">Классификация жанров игр: от платформеров до рогаликов</span>
+                  </a>
+                  <a class="search-result" href="./search-result.html">
+                    <span class="search-result__title">Классификация игр</span>
+                  </a>
+                  <a class="search-result" href="./search-result.html">
+                    <span class="search-result__title">Классификация игр</span>
+                  </a>
+                  <a class="search-result" href="./search-result.html">
+                    <span class="search-result__title">Классификация игр</span>
+                  </a>
+                  <a class="search-result" href="./search-result-error.html">
+                    <span class="search-result__title"><b>Пример *ничего не найдено*</b></span>
+                  </a>
+                  <a href="#" class="view-all">
+                    <img class="view-all__icon" src="/assets/images/icons/view-all-icon.svg" alt="">
+                   <span class="view-all__text">Посмотреть все</span>
+                  </a>
+                </div>
+              </label>
+              <div class="theme-switch pc-only">
+                <img src="/assets/images/switch-placeholder.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="main-container">
+          <div class="aside aside__left">
+            <div class="aside__content">
+              <div class="aside__section">
+                <a href="#" class="sidebar-item sidebar-item__active">
+                  <img class="sidebar-item__icon" src="/assets/images/icons/popular-icon.svg" alt="Popular">
+                  <span class="sidebar-item__text">Популярное</span>
+                </a>
+                <a href="#" class="sidebar-item ">
+                  <img class="sidebar-item__icon" src="/assets/images/icons/latest-icon.svg" alt="Latest">
+                  <span class="sidebar-item__text">Свежее</span>
+                </a>
+              </div>
+              <div class="divider"></div>
+              <div class="aside__section">
+                <span class="aside__section__title">Актуальные темы</span>
+                <a href="./сategory-template.html" class="sidebar-item">
+                  <img class="sidebar-item__icon" src="/assets/images/icons/steam-icon.svg" alt="Steam">
+                  <span class="sidebar-item__text">Steam</span>
+                </a>
+                <a href="./сategory-template.html" class="sidebar-item">
+                  <img class="sidebar-item__icon" src="/assets/images/icons/xbox-icon.svg" alt="Xbox">
+                  <span class="sidebar-item__text">Xbox</span>
+                </a>
+                <a href="./сategory-template.html" class="sidebar-item">
+                  <img class="sidebar-item__icon" src="/assets/images/icons/dota2-icon.svg" alt="Dota 2">
+                  <span class="sidebar-item__text">Dota 2</span>
+                </a>
+                <a href="./сategory-template.html" class="sidebar-item">
+                  <img class="sidebar-item__icon" src="/assets/images/icons/playstation-icon.svg" alt="PlayStation">
+                  <span class="sidebar-item__text">PlayStation</span>
+                </a>
+                <a href="./сategory-template.html" class="sidebar-item">
+                  <img class="sidebar-item__icon" src="/assets/images/icons/counter-strike-icon.svg" alt="Counter Strike 2">
+                  <span class="sidebar-item__text">Counter Strike 2</span>
+                </a>
+                <a href="./сategory-template.html" class="sidebar-item">
+                  <img class="sidebar-item__icon" src="/assets/images/icons/games-icon.svg" alt="Игры для ПК">
+                  <span class="sidebar-item__text">Игры для ПК</span>
+                </a>
+                <a href="./categories-list.html" class="view-all">
+                  <img class="view-all__icon" src="/assets/images/icons/view-all-icon.svg" alt="">
+                 <span class="view-all__text">Посмотреть все</span>
+                </a>
+              </div>
+              <div class="aside__section aside__section__bottom" style="gap: 0;">
+                <div class="divider"></div>
+                <a href="#" class="sidebar-item">
+                  <img class="sidebar-item__icon" src="/assets/images/icons/about-icon.svg" alt="About">
+                  <span class="sidebar-item__text">О проекте</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="main__content">
+            <div class="block p-24 mb-16 d-flex flex-column gap-16 align-items-start">
+              <a href="./index.html" class="btn btn-s btn-pill btn-secondary btn-left">Вернуться на главную</a>
+              <h1 class="headline-xs-semi-bold">Классификация</h1>
+            </div>
+            <div class="block p-24 mb-16 d-flex flex-column gap-24 align-items-center">
+              <img class="not-found__img" src="./assets/images/not-found.svg"  alt="">
+              <div class="d-flex flex-column gap-8 align-items-center text-center">
+                <h5 class="body-md-semi-bold text-primary">Ошибка</h5>
+                <p class="body-sm-regular">К сожалению, по вашему запросу ничего не найдено</p>
+              </div>
+              <a href="./index.html" class="btn btn-s btn-pill btn-primary">На главную</a>
+            </div>
+          </div>
+          <div class="aside aside__right">
+            <div class="aside__content">
+              <div class="widget">
+                <div class="widget__preview">
+                  <img class="widget__preview__img" src="./assets/images/widget-1.png" alt="Telegram">
+                  <div class="widget__preview__info">
+                    <img class="widget__preview__info__img" src="./assets/images/logo-rounded.svg" alt="">
+                  </div>
+                </div>
+                <div class="widget__content">
+                  <div class="widget__content__text">
+                    <h5 class="body-2xs-semi-bold text-secondary">НАШ TELEGRAM</h5>
+                    <h4 class="body-md-semi-bold text-primary">Donatov.net - Донат есть! 💎</h4>
+                    <h6 class="body-sm-regular text-secondary">260 425 подписчиков</h6>
+                  </div>
+                  <div class="widget__content__action">
+                    <a href="#" class="btn btn-pill btn-s btn-right btn-secondary">Подписаться</a>
+                  </div>
+                </div>
+              </div>
+              <div class="widget">
+                <div class="widget__preview">
+                  <img class="widget__preview__img" src="./assets/images/widget-2.png" alt="YouTube">
+                  <div class="widget__preview__info">
+                    <img class="widget__preview__info__img" src="./assets/images/logo-rounded.svg" alt="">
+                  </div>
+                </div>
+                <div class="widget__content">
+                  <div class="widget__content__text">
+                    <h5 class="body-2xs-semi-bold text-secondary">НАШ YOUTUBE</h5>
+                    <h4 class="body-md-semi-bold text-primary">Donatov.net</h4>
+                    <h6 class="body-sm-regular text-secondary">16 411 подписчиков</h6>
+                  </div>
+                  <div class="widget__content__action">
+                    <a href="#" class="btn btn-pill btn-s btn-right btn-secondary">Подписаться</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./assets/js/search.js"></script>
+  </body>
+</html>
