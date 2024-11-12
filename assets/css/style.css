@@ -2469,6 +2469,7 @@ a:focus {
 
   .blog {
     border-radius: 0;
+    padding: 16px;
   }
 
   .main__content {

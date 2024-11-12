@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="89" height="87"><svg width="89" height="87" viewBox="0 0 89 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.716797 43.8779L13.2516 13.011L44.0616 0L75.0876 12.4705L88.1656 43.1225L75.6308 73.9893L44.8208 87.0003L13.7948 74.5298L0.716797 43.8779Z" fill="#0D6EFD"></path>
+<path d="M44.775 42.8099L13.2516 13.011L0.716797 43.8778L44.775 42.8099Z" fill="#00A4FF"></path>
+<path d="M45.1897 42.9922L44.0639 0L13.2539 13.011L45.1897 42.9922Z" fill="#2CAFFF"></path>
+<path d="M44.4395 43.5003L44.8191 87.0004L75.6291 73.9894L44.4395 43.5003Z" fill="#2463ED"></path>
+<path d="M69.7813 43.7215L62.5157 25.8331L44.6659 18.2922L26.6852 25.5205L19.1055 43.2787L26.3711 61.1672L44.2208 68.7081L62.2015 61.4798L69.7813 43.7215Z" fill="#1099FF"></path>
+<path opacity="0.63" d="M28.5526 48.5305C39.4655 48.5305 48.3122 39.7292 48.3122 28.8722C48.3122 18.0152 39.4655 9.2139 28.5526 9.2139C17.6397 9.2139 8.79297 18.0152 8.79297 28.8722C8.79297 39.7292 17.6397 48.5305 28.5526 48.5305Z" fill="url(#paint0_radial_14565_11052)"></path>
+<defs>
+<radialGradient id="SvgjsRadialGradient1006" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(28.5526 28.8722) scale(19.7596 19.6583)">
+<stop stop-color="white" stop-opacity="0.4"></stop>
+<stop offset="0.15769" stop-color="white" stop-opacity="0.4"></stop>
+<stop offset="0.4244" stop-color="white" stop-opacity="0.21446"></stop>
+<stop offset="0.68171" stop-color="white" stop-opacity="0.05922"></stop>
+<stop offset="0.81523" stop-color="white" stop-opacity="0"></stop>
+</radialGradient>
+</defs>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>
