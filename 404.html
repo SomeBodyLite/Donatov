@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donatov.net Blog</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/light-mode.css" />
+    <link rel="stylesheet" href="./assets/css/light-mode.css">
+    <script src="./assets/js/themeInit.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
@@ -20,43 +21,60 @@
           <div class="logo">
             <a href="#" class="logo__link">
               <img
-                class="logo__img"
+                class="logo__img light-only"
                 src="./assets/images/logo.svg"
+                alt="Donatov.net Blog"
+              />
+              <img
+                class="logo__img dark-only"
+                src="./assets/images/logo_dark.svg"
                 alt="Donatov.net Blog"
               />
             </a>
           </div>
           <div class="header-actions">
             <div class="d-flex justify-content-end gap-8 align-items-center">
-              <label class="search-wrapper search-container">
-                <input type="text" placeholder="Найдите статью..." class="main-search">
-                <button href="#" class="btn search-button">
-                  <img src="./assets/images/search.svg" alt="">
-                </button>
-                <div class="search-suggestions">
-                  <a class="search-result" href="./search-result.html">
-                    <span class="search-result__title">Классификация жанров игр: от платформеров до рогаликов</span>
-                  </a>
-                  <a class="search-result" href="./search-result.html">
-                    <span class="search-result__title">Классификация игр</span>
-                  </a>
-                  <a class="search-result" href="./search-result.html">
-                    <span class="search-result__title">Классификация игр</span>
-                  </a>
-                  <a class="search-result" href="./search-result.html">
-                    <span class="search-result__title">Классификация игр</span>
-                  </a>
-                  <a class="search-result" href="./search-result-error.html">
-                    <span class="search-result__title"><b>Пример *ничего не найдено*</b></span>
-                  </a>
-                  <a href="#" class="view-all">
-                    <img class="view-all__icon" src="./assets/images/icons/view-all-icon.svg" alt="">
-                   <span class="view-all__text">Посмотреть все</span>
-                  </a>
-                </div>
-              </label>
+              <div class="search-content">
+                <label class="search-wrapper search-container">
+                  <input type="text" placeholder="Найдите статью..." class="main-search">
+                  <button class="btn search-button">
+                    <img src="./assets/images/icons/search.svg" alt="">
+                  </button>
+                  <button class="btn search-button__clear">
+                    <img src="./assets/images/icons/dismiss.svg" alt="">
+                  </button>
+                  <div class="search-suggestions">
+                    <a class="search-result" href="./search-result.html">
+                      <span class="search-result__title">Классификация жанров игр: от платформеров до рогаликов</span>
+                    </a>
+                    <a class="search-result" href="./search-result.html">
+                      <span class="search-result__title">Классификация игр</span>
+                    </a>
+                    <a class="search-result" href="./search-result.html">
+                      <span class="search-result__title">Классификация игр</span>
+                    </a>
+                    <a class="search-result" href="./search-result.html">
+                      <span class="search-result__title">Классификация игр</span>
+                    </a>
+                    <a class="search-result" href="./search-result-error.html">
+                      <span class="search-result__title"><b>Пример *ничего не найдено*</b></span>
+                    </a>
+                    <a href="#" class="view-all">
+                      <img class="view-all__icon" src="./assets/images/icons/view-all-icon.svg" alt="">
+                     <span class="view-all__text">Посмотреть все</span>
+                    </a>
+                  </div>
+                </label>
+              </div>
               <div class="theme-switch pc-only">
-                <img src="./assets/images/switch-placeholder.svg" alt="" />
+                <button id="theme-switch">
+                  <svg width="62" height="32" viewBox="0 0 62 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 6C0 2.68629 2.68629 0 6 0H56C59.3137 0 62 2.68629 62 6V26C62 29.3137 59.3137 32 56 32H6C2.68629 32 0 29.3137 0 26V6Z" fill="var(--semantic-neutral-alpha-3)" />
+                  <path class="theme-switch__sun" d="M32 6C32 3.79086 33.7909 2 36 2H56C58.2091 2 60 3.79086 60 6V26C60 28.2091 58.2091 30 56 30H36C33.7909 30 32 28.2091 32 26V6Z" fill="var(--states-primary-secondary)"/>
+                  <path d="M22.6881 20.1675C20.3866 24.1539 15.2892 25.5197 11.3028 23.2182C10.2172 22.5914 9.30329 21.7435 8.60723 20.7327C8.3745 20.3948 8.52504 19.9281 8.91137 19.7898C12.0509 18.6661 13.7324 17.364 14.7081 15.5014C15.7354 13.5406 16.0008 11.3927 15.2822 8.44852C15.1829 8.04141 15.5044 7.65377 15.9229 7.67622C17.2203 7.74583 18.4879 8.11854 19.6374 8.7822C23.6238 11.0837 24.9896 16.1811 22.6881 20.1675ZM15.8154 16.0815C14.7726 18.0719 13.0558 19.4973 10.1342 20.6639C10.641 21.2437 11.2439 21.7408 11.9278 22.1357C15.3163 24.092 19.6492 22.931 21.6056 19.5425C23.5619 16.154 22.4009 11.8211 19.0124 9.86473C18.2815 9.44276 17.4959 9.15941 16.6856 9.01845C17.2249 11.8384 16.8771 14.0549 15.8154 16.0815Z" fill="var(--icon-secondary)"/>
+                  <path d="M46 7.6665C46.3451 7.6665 46.625 7.94633 46.625 8.2915V9.5415C46.625 9.88668 46.3451 10.1665 46 10.1665C45.6548 10.1665 45.375 9.88668 45.375 9.5415V8.2915C45.375 7.94633 45.6548 7.6665 46 7.6665ZM46 20.1665C48.3011 20.1665 50.1666 18.301 50.1666 15.9998C50.1666 13.6987 48.3011 11.8332 46 11.8332C43.6988 11.8332 41.8333 13.6987 41.8333 15.9998C41.8333 18.301 43.6988 20.1665 46 20.1665ZM46 18.9165C44.3891 18.9165 43.0833 17.6107 43.0833 15.9998C43.0833 14.389 44.3891 13.0832 46 13.0832C47.6108 13.0832 48.9166 14.389 48.9166 15.9998C48.9166 17.6107 47.6108 18.9165 46 18.9165ZM53.7083 16.6248C54.0535 16.6248 54.3333 16.345 54.3333 15.9998C54.3333 15.6547 54.0535 15.3748 53.7083 15.3748H52.4583C52.1131 15.3748 51.8333 15.6547 51.8333 15.9998C51.8333 16.345 52.1131 16.6248 52.4583 16.6248H53.7083ZM46 21.8332C46.3451 21.8332 46.625 22.113 46.625 22.4582V23.7082C46.625 24.0533 46.3451 24.3332 46 24.3332C45.6548 24.3332 45.375 24.0533 45.375 23.7082V22.4582C45.375 22.113 45.6548 21.8332 46 21.8332ZM39.5416 16.6248C39.8868 16.6248 40.1666 16.345 40.1666 15.9998C40.1666 15.6547 39.8868 15.3748 39.5416 15.3748H38.2916C37.9464 15.3748 37.6666 15.6547 37.6666 15.9998C37.6666 16.345 37.9464 16.6248 38.2916 16.6248H39.5416ZM39.5164 9.51654C39.7604 9.27246 40.1562 9.27246 40.4002 9.51654L41.6502 10.7665C41.8943 11.0106 41.8943 11.4063 41.6502 11.6504C41.4062 11.8945 41.0104 11.8945 40.7664 11.6504L39.5164 10.4004C39.2723 10.1563 39.2723 9.76062 39.5164 9.51654ZM40.4002 22.4837C40.1562 22.7278 39.7604 22.7278 39.5164 22.4837C39.2723 22.2397 39.2723 21.8439 39.5164 21.5999L40.7664 20.3499C41.0104 20.1058 41.4062 20.1058 41.6502 20.3499C41.8943 20.5939 41.8943 20.9897 41.6502 21.2337L40.4002 22.4837ZM52.4836 9.51654C52.2395 9.27246 51.8438 9.27246 51.5997 9.51654L50.3497 10.7665C50.1056 11.0106 50.1056 11.4063 50.3497 11.6504C50.5938 11.8945 50.9895 11.8945 51.2336 11.6504L52.4836 10.4004C52.7276 10.1563 52.7276 9.76062 52.4836 9.51654ZM51.5997 22.4837C51.8438 22.7278 52.2395 22.7278 52.4836 22.4837C52.7276 22.2397 52.7276 21.8439 52.4836 21.5999L51.2336 20.3499C50.9895 20.1058 50.5938 20.1058 50.3497 20.3499C50.1056 20.5939 50.1056 20.9897 50.3497 21.2337L51.5997 22.4837Z" fill="var(--icon-primary)"/>
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
@@ -69,11 +87,11 @@
           <div class="aside aside__left">
             <div class="aside__content">
               <div class="aside__section">
-                <a href="#" class="sidebar-item sidebar-item__active">
+                <a href="./index.html" class="sidebar-item sidebar-item__active">
                   <img class="sidebar-item__icon" src="./assets/images/icons/popular-icon.svg" alt="Popular">
                   <span class="sidebar-item__text">Популярное</span>
                 </a>
-                <a href="#" class="sidebar-item ">
+                <a href="./index.html" class="sidebar-item ">
                   <img class="sidebar-item__icon" src="./assets/images/icons/latest-icon.svg" alt="Latest">
                   <span class="sidebar-item__text">Свежее</span>
                 </a>
@@ -112,7 +130,7 @@
               </div>
               <div class="aside__section aside__section__bottom" style="gap: 0;">
                 <div class="divider"></div>
-                <a href="#" class="sidebar-item">
+                <a href="./about.html" class="sidebar-item">
                   <img class="sidebar-item__icon" src="./assets/images/icons/about-icon.svg" alt="About">
                   <span class="sidebar-item__text">О проекте</span>
                 </a>
@@ -120,11 +138,12 @@
             </div>
           </div>
           <div class="main__content">
-            <div class="block p-24 mb-16 d-flex flex-column gap-24 align-items-center">
-              <img class="not-found__img" src="./assets/images/404.svg"  alt="">
+            <div class="block-404 block p-24 d-flex flex-column gap-24 align-items-center">
+              <img class="not-found__img light-only" src="./assets/images/404.svg"  alt="">
+              <img class="not-found__img dark-only" src="./assets/images/404_dark.svg"  alt="">
               <div class="d-flex flex-column gap-8 align-items-center text-center">
                 <h5 class="body-md-semi-bold text-primary">Ошибка 404</h5>
-                <p class="body-sm-regular">К сожалению, данная страница удалена или её не существует</p>
+                <p class="body-sm-regular w400 text-primary">К сожалению, данная страница удалена или её не существует</p>
               </div>
               <a href="./index.html" class="btn btn-s btn-pill btn-primary">На главную</a>
             </div>
@@ -133,7 +152,7 @@
             <div class="aside__content">
               <div class="widget">
                 <div class="widget__preview">
-                  <img class="widget__preview__img" src="./assets/images/widget-1.png" alt="Telegram">
+                  <img class="widget__preview__img" src="./assets/images/widget-1.svg" alt="Telegram">
                   <div class="widget__preview__info">
                     <img class="widget__preview__info__img" src="./assets/images/logo-rounded.svg" alt="">
                   </div>
@@ -151,7 +170,7 @@
               </div>
               <div class="widget">
                 <div class="widget__preview">
-                  <img class="widget__preview__img" src="./assets/images/widget-2.png" alt="YouTube">
+                  <img class="widget__preview__img" src="./assets/images/widget-2.svg" alt="YouTube">
                   <div class="widget__preview__info">
                     <img class="widget__preview__info__img" src="./assets/images/logo-rounded.svg" alt="">
                   </div>
@@ -172,6 +191,21 @@
         </div>
       </div>
     </main>
+    <footer class="footer">
+      <a href="./index.html" class="footer__item footer__item__active">
+        <img class="footer__item__img" src="./assets/images/icons/home-icon.svg" alt="">
+        <span class="footer__item__text">Главная</span>
+      </a>
+      <a href="./categories-list.html" class="footer__item">
+        <img class="footer__item__img" src="./assets/images/icons/categories-icon.svg" alt="">
+        <span class="footer__item__text">Категории</span>
+      </a>
+      <a href="#" class="footer__item">
+        <img class="footer__item__img" src="./assets/images/icons/shop-icon.svg" alt="">
+        <span class="footer__item__text">Магазин</span>
+      </a>
+    </footer>
     <script src="./assets/js/search.js"></script>
+    <script src="./assets/js/themeSwitch.js"></script>
   </body>
 </html>
