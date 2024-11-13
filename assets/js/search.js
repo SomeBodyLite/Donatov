@@ -20,6 +20,7 @@ searchButton.addEventListener("click", function (e) {
 
 searchClearButton.addEventListener("click", function (e) {
   e.preventDefault();
+  searchInput.value = '';
   searchInput.classList.remove("expanded");
 });
 
