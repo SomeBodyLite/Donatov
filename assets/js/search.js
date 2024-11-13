@@ -20,17 +20,10 @@ searchButton.addEventListener("click", function (e) {
 
 searchClearButton.addEventListener("click", function (e) {
   e.preventDefault();
-  searchInput.value = '';
   searchInput.classList.remove("expanded");
+  searchInput.value = '';
+  searchSuggestions.classList.remove('active');
 });
-
-// Вариант, который ОЧИЩАЕТ ИНПУТ ПРИ НАЖАТИИ НА КРЕСТИК
-
-// searchClearButton.addEventListener('click', function(e) {
-//   e.preventDefault();
-//   searchInput.value = '';
-//   searchSuggestions.classList.remove('active');
-// });
 
 document.addEventListener("click", function (e) {
   if (!searchWrapper.contains(e.target)) {
