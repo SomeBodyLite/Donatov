@@ -383,7 +383,7 @@ input {
   --background-input-active: #1A1D20;
 }
 @media (prefers-color-scheme: dark) {
-  .dark:root {
+  :root {
     --semantic-neutral-0: var(--neutral-950);
     --semantic-neutral-50: var(--neutral-900);
     --semantic-neutral-100: var(--neutral-800);
