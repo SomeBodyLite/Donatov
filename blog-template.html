@@ -386,14 +386,40 @@
                     <span class="react__count">999</span>
                   </button>
                 </object>
-                <button class="btn btn-pill btn-s btn-image btn-primary">
-                  Поделиться статьей
-                  <img
-                    class="btn-image__icon"
-                    src="./assets/images/icons/share.svg"
-                    alt=""
-                  />
-                </button>
+                <div class="social-share"></div>
+                <div class="dropdown">
+                  <button id="shareButton" class="dropdown__button btn btn-pill btn-s btn-image btn-primary">
+                    Поделиться статьей
+                    <img
+                      class="btn-image__icon"
+                      src="./assets/images/icons/share.svg"
+                      alt=""
+                    />
+                  </button>
+                  <div class="dropdown__menu">
+                    <a id="copyLink" class="dropdown__menu__item" href="#">
+                      <img src="./assets/images/icons/file-copy-icon.svg" alt="">
+                      <span class="dropdown__menu__item__text">Скопировать ссылку</span>
+                    </a>
+                    <div class="divider" style="width: 100%; margin: 4px 0;"></div>
+                    <a id="vkLink" class="dropdown__menu__item" href="#" target="_blank">
+                      <img src="./assets/images/icons/vk-icon.svg" alt="">
+                      <span class="dropdown__menu__item__text">Поделиться в ВК</span>
+                    </a>
+                    <a id="telegramLink" class="dropdown__menu__item" href="#" target="_blank">
+                      <img src="./assets/images/icons/telegram-icon.svg" alt="">
+                      <span class="dropdown__menu__item__text">Поделиться в Telegram</span>
+                    </a>
+                    <a id="facebookLink" class="dropdown__menu__item" href="#" target="_blank">
+                      <img src="./assets/images/icons/facebook-icon.svg" alt="">
+                      <span class="dropdown__menu__item__text">Поделиться в Facebook</span>
+                    </a>
+                    <a id="twitterLink" class="dropdown__menu__item" href="#" target="_blank">
+                      <img src="./assets/images/icons/twitter-icon.svg" alt="">
+                      <span class="dropdown__menu__item__text">Поделиться в X</span>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
             <h4
@@ -910,4 +936,6 @@
   <script src="./assets/js/search.js"></script>
   <script src="./assets/js/themeSwitch.js"></script>
   <script src="./assets/js/reactions.js"></script>
+  <script src="./assets/js/dropdown.js"></script>
+  <script src="./assets/js/share.js"></script>
 </html>

@@ -1823,7 +1823,11 @@ a:focus {
 
 .post__content__title {
   color: var(--text-primary);
-
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
   /* Body/md/semi-bold */
   font-family: var(--family-body);
   font-size: var(--type-size-md);
@@ -1941,7 +1945,7 @@ a:focus {
   border-radius: 16px;
   background: var(--background-bg-primary);
   /* shadows/xs */
-  box-shadow: 0px 0.5px 1px 0px var(--shadows-drop-3, rgba(33, 37, 41, 0.08));
+  box-shadow: 0px 0.5px 1px 0px var(--shadows-drop-3);
   display: flex;
   flex-direction: column;
 }
@@ -1953,7 +1957,7 @@ a:focus {
   gap: 16px
 }
 
-.blog a:not(.btn, .blog__image__subtitle a, .tag) {
+.blog a:not(.btn, .blog__image__subtitle a, .tag, .dropdown__menu__item) {
   color: var(--text-brand);
 
   /* Body/md/regular */
@@ -2358,6 +2362,65 @@ a:focus {
   line-height: var(--type-height-xs);
 }
 
+.dropdown {
+  position: relative;
+}
+
+.dropdown .dropdown__button {
+  cursor: pointer;
+}
+
+.dropdown .dropdown__menu {
+  position: absolute;
+  top: 80%;
+  right: 0;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s;
+  border-radius: 8px;
+  background: var(--background-bg-primary);
+  /* shadows/xs */
+  box-shadow: 0px 0.5px 1px 0px var(--shadows-drop-3);
+
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  padding: 4px;
+  align-items: flex-start;
+}
+
+.dropdown__menu.active {
+  visibility: visible;
+  opacity: 1;
+  top: calc(100% + 30px);
+}
+
+.dropdown__menu__item {
+  border-radius: 4px;
+  background: var(--states-primary-ghost);
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  text-decoration: none;
+}
+
+.dropdown__menu__item:hover {
+  background: var(--states-primary-ghost-hover);
+}
+
+.dropdown__menu__item__text {
+  color: var(--text-primary);
+
+  font-family: var(--family-body);
+  font-size: var(--type-size-sm);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--type-height-sm);
+}
+
 @media (max-width: 1400px) {
   .main-container {
     grid-template-columns: 220px minmax(0, 640px) 280px;
@@ -2515,117 +2578,117 @@ a:focus {
   .search-content:has(.main-search.expanded) {
     width: 100%;
   }
-  
-@media (prefers-color-scheme: dark) {
-  :root {
-    --semantic-neutral-0: var(--neutral-950);
-    --semantic-neutral-50: var(--neutral-900);
-    --semantic-neutral-100: var(--neutral-800);
-    --semantic-neutral-200: var(--neutral-700);
-    --semantic-neutral-300: var(--neutral-600);
-    --semantic-neutral-400: var(--neutral-500);
-    --semantic-neutral-500: var(--neutral-400);
-    --semantic-neutral-600: var(--neutral-300);
-    --semantic-neutral-700: var(--neutral-200);
-    --semantic-neutral-800: var(--neutral-100);
-    --semantic-neutral-900: var(--neutral-50);
-    --semantic-neutral-950: var(--neutral-0);
-    --semantic-neutral-alpha-0: var(--neutral-alpha-0);
-    --semantic-neutral-alpha-3: var(--neutral-alpha-1);
-    --semantic-neutral-alpha-5: var(--neutral-alpha-2);
-    --semantic-neutral-inverted-0: var(--neutral-alpha-0);
-    --semantic-neutral-inverted-20: var(--neutral-alpha-6);
-    --semantic-neutral-inverted-24: var(--neutral-alpha-7);
-    --semantic-neutral-inverted-28: var(--neutral-alpha-8);
-    --semantic-neutral-inverted-32: var(--neutral-alpha-9);
-    --semantic-neutral-inverted-40: var(--neutral-alpha-10);
-    --semantic-neutral-inverted-48: var(--neutral-alpha-12);
-    --states-primary-primary-disabled: var(--neutral-inverted-3);
-    --states-primary-secondary: var(--neutral-800);
-    --states-primary-secondary-hover: var(--neutral-700);
-    --states-primary-tertiary: var(--neutral-inverted-3);
-    --states-primary-primary-hover: var(--semantic-brand-600);
-    --states-primary-secondary-pressed: var(--neutral-800);
-    --states-primary-tertiary-hover: var(--neutral-inverted-5);
-    --states-primary-tertiary-disabled: var(--neutral-inverted-3);
-    --states-primary-ghost: var(--neutral-inverted-0);
-    --states-primary-ghost-hover: var(--neutral-inverted-5);
-    --states-primary-ghost-disabled: var(--neutral-inverted-0);
-    --border-light: var(--semantic-neutral-800);
-    --border-subtle: var(--semantic-neutral-700);
-    --border-strong: var(--semantic-neutral-600);
-    --border-alpha-light: var(--semantic-neutral-inverted-8);
-    --border-alpha-subtle: var(--semantic-neutral-inverted-12);
-    --border-alpha-strong: var(--semantic-neutral-inverted-20);
-    --text-primary: var(--item-inverted);
-    --text-secondary: var(--item-inverted-secondary);
-    --text-tertiary: var(--item-inverted-tertiary);
-    --text-disabled: var(--item-inverted-quaternary);
-    --text-fixed-disabled: var(--item-fixed-quaternary);
-    --text-inverted: var(--item-primary);
-    --text-inverted-secondary: var(--item-secondary);
-    --text-inverted-tertiary: var(--item-tertiary);
-    --text-inverted-disabled: var(--item-quaternary);
-    --background-bg-primary: var(--neutral-900);
-    --background-bg-secondary: var(--neutral-950);
-    --background-bg-primary: var(--neutral-900);
-    --background-component-default: var(--neutral-900);
-    --icon-primary: var(--item-inverted);
-    --icon-secondary: var(--item-inverted-secondary);
-    --icon-tertiary: var(--item-inverted-tertiary);
-    --icon-disabled: var(--item-inverted-quaternary);
-    --background-component-hovered: var(--neutral-800);
-    --semantic-neutral-alpha-56: var(--neutral-inverted-12);
-    --semantic-neutral-alpha-64: var(--neutral-inverted-13);
-    --semantic-neutral-alpha-72: var(--neutral-inverted-14);
-    --semantic-neutral-alpha-80: var(--neutral-inverted-15);
-    --semantic-neutral-alpha-88: var(--neutral-inverted-16);
-    --semantic-neutral-inverted-56: var(--neutral-alpha-12);
-    --semantic-neutral-inverted-64: var(--neutral-alpha-13);
-    --semantic-neutral-inverted-72: var(--neutral-alpha-14);
-    --semantic-neutral-inverted-80: var(--neutral-alpha-15);
-    --semantic-neutral-inverted-88: var(--neutral-alpha-16);
-    --states-primary-secondary-disabled: var(--neutral-alpha-3);
-    --states-primary-tertiary-pressed: var(--neutral-inverted-8);
-    --states-primary-ghost-pressed: var(--neutral-inverted-8);
-    --border-button-secondary: var(--semantic-neutral-alpha-0);
-    --border-button-secondary-hover: var(--semantic-neutral-alpha-0);
-    --background-bg-tertiary: #16191BFF;
-    --background-card-top: #FFFFFF33;
-    --background-card-bottom: #FFFFFF00;
-    --background-bg-header: #1A1D20E6;
-    --post-gradient: linear-gradient(180deg, rgba(33, 37, 41, 0.00) 0%, #16191B 100%);
-    --border-alpha-subtle: rgba(255, 255, 255, 0.12);
-    --background-input-active: #1A1D20;
-  }
 
-  .dark-only {
-    display: flex;
-  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --semantic-neutral-0: var(--neutral-950);
+      --semantic-neutral-50: var(--neutral-900);
+      --semantic-neutral-100: var(--neutral-800);
+      --semantic-neutral-200: var(--neutral-700);
+      --semantic-neutral-300: var(--neutral-600);
+      --semantic-neutral-400: var(--neutral-500);
+      --semantic-neutral-500: var(--neutral-400);
+      --semantic-neutral-600: var(--neutral-300);
+      --semantic-neutral-700: var(--neutral-200);
+      --semantic-neutral-800: var(--neutral-100);
+      --semantic-neutral-900: var(--neutral-50);
+      --semantic-neutral-950: var(--neutral-0);
+      --semantic-neutral-alpha-0: var(--neutral-alpha-0);
+      --semantic-neutral-alpha-3: var(--neutral-alpha-1);
+      --semantic-neutral-alpha-5: var(--neutral-alpha-2);
+      --semantic-neutral-inverted-0: var(--neutral-alpha-0);
+      --semantic-neutral-inverted-20: var(--neutral-alpha-6);
+      --semantic-neutral-inverted-24: var(--neutral-alpha-7);
+      --semantic-neutral-inverted-28: var(--neutral-alpha-8);
+      --semantic-neutral-inverted-32: var(--neutral-alpha-9);
+      --semantic-neutral-inverted-40: var(--neutral-alpha-10);
+      --semantic-neutral-inverted-48: var(--neutral-alpha-12);
+      --states-primary-primary-disabled: var(--neutral-inverted-3);
+      --states-primary-secondary: var(--neutral-800);
+      --states-primary-secondary-hover: var(--neutral-700);
+      --states-primary-tertiary: var(--neutral-inverted-3);
+      --states-primary-primary-hover: var(--semantic-brand-600);
+      --states-primary-secondary-pressed: var(--neutral-800);
+      --states-primary-tertiary-hover: var(--neutral-inverted-5);
+      --states-primary-tertiary-disabled: var(--neutral-inverted-3);
+      --states-primary-ghost: var(--neutral-inverted-0);
+      --states-primary-ghost-hover: var(--neutral-inverted-5);
+      --states-primary-ghost-disabled: var(--neutral-inverted-0);
+      --border-light: var(--semantic-neutral-800);
+      --border-subtle: var(--semantic-neutral-700);
+      --border-strong: var(--semantic-neutral-600);
+      --border-alpha-light: var(--semantic-neutral-inverted-8);
+      --border-alpha-subtle: var(--semantic-neutral-inverted-12);
+      --border-alpha-strong: var(--semantic-neutral-inverted-20);
+      --text-primary: var(--item-inverted);
+      --text-secondary: var(--item-inverted-secondary);
+      --text-tertiary: var(--item-inverted-tertiary);
+      --text-disabled: var(--item-inverted-quaternary);
+      --text-fixed-disabled: var(--item-fixed-quaternary);
+      --text-inverted: var(--item-primary);
+      --text-inverted-secondary: var(--item-secondary);
+      --text-inverted-tertiary: var(--item-tertiary);
+      --text-inverted-disabled: var(--item-quaternary);
+      --background-bg-primary: var(--neutral-900);
+      --background-bg-secondary: var(--neutral-950);
+      --background-bg-primary: var(--neutral-900);
+      --background-component-default: var(--neutral-900);
+      --icon-primary: var(--item-inverted);
+      --icon-secondary: var(--item-inverted-secondary);
+      --icon-tertiary: var(--item-inverted-tertiary);
+      --icon-disabled: var(--item-inverted-quaternary);
+      --background-component-hovered: var(--neutral-800);
+      --semantic-neutral-alpha-56: var(--neutral-inverted-12);
+      --semantic-neutral-alpha-64: var(--neutral-inverted-13);
+      --semantic-neutral-alpha-72: var(--neutral-inverted-14);
+      --semantic-neutral-alpha-80: var(--neutral-inverted-15);
+      --semantic-neutral-alpha-88: var(--neutral-inverted-16);
+      --semantic-neutral-inverted-56: var(--neutral-alpha-12);
+      --semantic-neutral-inverted-64: var(--neutral-alpha-13);
+      --semantic-neutral-inverted-72: var(--neutral-alpha-14);
+      --semantic-neutral-inverted-80: var(--neutral-alpha-15);
+      --semantic-neutral-inverted-88: var(--neutral-alpha-16);
+      --states-primary-secondary-disabled: var(--neutral-alpha-3);
+      --states-primary-tertiary-pressed: var(--neutral-inverted-8);
+      --states-primary-ghost-pressed: var(--neutral-inverted-8);
+      --border-button-secondary: var(--semantic-neutral-alpha-0);
+      --border-button-secondary-hover: var(--semantic-neutral-alpha-0);
+      --background-bg-tertiary: #16191BFF;
+      --background-card-top: #FFFFFF33;
+      --background-card-bottom: #FFFFFF00;
+      --background-bg-header: #1A1D20E6;
+      --post-gradient: linear-gradient(180deg, rgba(33, 37, 41, 0.00) 0%, #16191B 100%);
+      --border-alpha-subtle: rgba(255, 255, 255, 0.12);
+      --background-input-active: #1A1D20;
+    }
 
-  .light-only {
-    display: none;
-  }
+    .dark-only {
+      display: flex;
+    }
 
-  .btn-secondary.btn-left::before,
-  .btn-secondary.btn-right::after {
-    filter: brightness(0) invert(71%) sepia(75%) saturate(17%) hue-rotate(163deg) brightness(84%) contrast(83%);
-  }
+    .light-only {
+      display: none;
+    }
 
-  .btn-secondary.btn-left:disabled:before,
-  .btn-secondary.btn-right:disabled:after {
-    filter: none;
-  }
+    .btn-secondary.btn-left::before,
+    .btn-secondary.btn-right::after {
+      filter: brightness(0) invert(71%) sepia(75%) saturate(17%) hue-rotate(163deg) brightness(84%) contrast(83%);
+    }
 
-  .search-button img,
-  .search-button__clear img {
-    filter: brightness(0) invert(100%) sepia(0%) saturate(7500%) hue-rotate(23deg) brightness(118%) contrast(118%);
-  }
+    .btn-secondary.btn-left:disabled:before,
+    .btn-secondary.btn-right:disabled:after {
+      filter: none;
+    }
 
-  .view-all:hover .view-all__icon {
-    filter: invert(100%);
+    .search-button img,
+    .search-button__clear img {
+      filter: brightness(0) invert(100%) sepia(0%) saturate(7500%) hue-rotate(23deg) brightness(118%) contrast(118%);
+    }
+
+    .view-all:hover .view-all__icon {
+      filter: invert(100%);
+    }
   }
-}
 
 }
 
@@ -2634,5 +2697,5 @@ a:focus {
   .blog__footer {
     flex-direction: column;
   }
-  
+
 }
