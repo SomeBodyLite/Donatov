@@ -2699,4 +2699,10 @@ a:focus {
     flex-direction: column;
   }
 
+  .dropdown__button#shareButton {
+    width: 100%;
+  }
+  .dropdown .dropdown__menu{
+    width: 100%;
+  }
 }
