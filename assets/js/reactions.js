@@ -1,6 +1,7 @@
  // Временный скрипт выдачи лайков.
  document.querySelectorAll('.react').forEach((react) => {
-  react.addEventListener('click', () => {
+  react.addEventListener('click', (event) => {
+    event.preventDefault()
     react.classList.toggle('react__active');
 
     const countElement = react.querySelector('.react__count');
