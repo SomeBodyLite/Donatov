@@ -2634,6 +2634,10 @@ a:focus {
 
 }
 
+.promo-tag {
+  display: none;
+}
+
 @media (max-width:600px) {
   .promo-block__content {
     flex-direction: column;
@@ -2642,13 +2646,32 @@ a:focus {
   .promo-title {
     flex-direction: column-reverse;
     gap: 8px;
+    align-items: unset;
   }
 
   .promo-info .d-flex.gap-10 {
     flex-direction: column;
   }
-  .promo-game__cover{
+
+  .promo-game__cover {
     display: none;
+  }
+
+  .promo-tag {
+    border-radius: 6px;
+    background: var(--states-primary-tertiary);
+    display: flex;
+    display: inline-flex;
+    min-height: 24px;
+    max-height: 24px;
+    padding: 2px 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    text-decoration: none;
+  }
+  .promo-tag .tag__img{
+    border-radius: 8px;
   }
 }
 
